@@ -20,19 +20,17 @@ import java.util.List;
  * Created by Halvasan on 19.10.2017.
  */
 public class JsonEntitySource {
-
+    private List<Lecture> lectureList = null;
+    private  ObjectMapper mapper = new ObjectMapper();
 
     public Subject subject(String subjectName) {
 
         JsonReadFile jrf = new JsonReadFile("Subjects/" + subjectName);
-
-        List<Lecture> lectureList = null;
-
+        System.out.println(jrf.jsonRead());
         try {
-            ObjectMapper mapper = new ObjectMapper();
             DateFormat df = new SimpleDateFormat("dd.MM.yyyy-HH:mm");
-            mapper.setDateFormat(df); //создания в мапе полей с временем, для дальнейшей фильтрации по времени из мапы
-            Lecture[] lectures = mapper.readValue(jrf.jsonRead(), LecturePOJO[].class ); //считываю джсоновский файл, провожу десериализаци
+            mapper.setDateFormat(df);
+            Lecture lectures = mapper.readValue(jrf.jsonRead(), LecturePOJO.class );
             lectureList = Arrays.asList(lectures);
         } catch (IOException e) {
             System.out.println("cant deserialize json");

@@ -15,17 +15,8 @@ public class TimeTablePOJO implements TimeTable {
     public TimeTablePOJO(List<Lecture> lectures){
         this.lectures = lectures;
     }
-
     public List<Lecture> allLectures() {
         return lectures;
-    }
-
-    public List<Lecture> getLectures() {
-        return lectures;
-    }
-
-    public void setLectures(List<Lecture> lectures) {
-        this.lectures = lectures;
     }
 
     public List<Lecture> lecturesFrom(Date date) {

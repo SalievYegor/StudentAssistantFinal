@@ -10,7 +10,7 @@ public interface Subject {
     /*
     Интерфейс для описания сущности предметов
      */
-    String title();
+    String subjectName();
     TimeTable timeTable();
     void print();
 }
