@@ -46,14 +46,16 @@ public class LecturePOJO implements Lecture {
         return lectureRoom;
     }
 
-    public void print() {
-        System.out.println("Lecture " + title);
-        System.out.println("start: " + startTime);
-        System.out.println("end: " + endTime);
-        System.out.println("description: " + description);
-        System.out.println("Lecture room: ");
-        System.out.println(" room: " + lectureRoom.floor() +
-                " floor: " + lectureRoom.number() +
-                " description: " + lectureRoom.description());
-    }
+
+
+//    public void print() {
+//        System.out.println("Lecture " + title);
+//        System.out.println("start: " + startTime);
+//        System.out.println("end: " + endTime);
+//        System.out.println("description: " + description);
+//        System.out.println("Lecture room: ");
+//        System.out.println(" room: " + lectureRoom.floor() +
+//                " floor: " + lectureRoom.number() +
+//                " description: " + lectureRoom.description());
+//    }
 }

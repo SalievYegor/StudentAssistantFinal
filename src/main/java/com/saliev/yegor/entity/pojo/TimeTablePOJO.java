@@ -20,6 +20,14 @@ public class TimeTablePOJO implements TimeTable {
         return lectures;
     }
 
+    public List<Lecture> getLectures() {
+        return lectures;
+    }
+
+    public void setLectures(List<Lecture> lectures) {
+        this.lectures = lectures;
+    }
+
     public List<Lecture> lecturesFrom(Date date) {
         return lectures;
     }

@@ -3,6 +3,7 @@ package com.saliev.yegor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.saliev.yegor.entity.Lecture;
 import com.saliev.yegor.entity.Subject;
+import com.saliev.yegor.entity.TimeTable;
 import com.saliev.yegor.entity.pojo.LecturePOJO;
 import com.saliev.yegor.entity.pojo.SubjectPOJO;
 import com.saliev.yegor.entity.pojo.TimeTablePOJO;
@@ -19,18 +20,19 @@ import java.util.List;
  * Created by Halvasan on 19.10.2017.
  */
 public class JsonEntitySource {
-    private List<Lecture> lectureList = null;
-    private  ObjectMapper mapper = new ObjectMapper();
 
 
     public Subject subject(String subjectName) {
 
         JsonReadFile jrf = new JsonReadFile("Subjects/" + subjectName);
 
+        List<Lecture> lectureList = null;
+
         try {
-            DateFormat df = new SimpleDateFormat("dd.MM.yyyy-HH.mm");
+            ObjectMapper mapper = new ObjectMapper();
+            DateFormat df = new SimpleDateFormat("dd.MM.yyyy-HH:mm");
             mapper.setDateFormat(df); //создания в мапе полей с временем, для дальнейшей фильтрации по времени из мапы
-            Lecture[] lectures = mapper.readValue(jrf.jsonRead(), LecturePOJO[].class ); //записываю в мапу десериализованную строку
+            Lecture[] lectures = mapper.readValue(jrf.jsonRead(), LecturePOJO[].class ); //считываю джсоновский файл, провожу десериализаци
             lectureList = Arrays.asList(lectures);
         } catch (IOException e) {
             System.out.println("cant deserialize json");

@@ -12,20 +12,15 @@ public class LectureRoomPOJO implements LectureRoom {
     public int number;
     public String description;
 
-    public LectureRoomPOJO(int floor, int number, String description){
-        this.floor = floor;
-        this.number = number;
-        this.description = description;
-    }
     public int floor() {
-        return floor;
+        return floor();
     }
 
     public int number() {
-        return number;
+        return number();
     }
 
     public String description() {
-        return description;
+        return description();
     }
 }

@@ -1,5 +1,6 @@
 package com.saliev.yegor.entity;
 
+import java.io.PrintStream;
 import java.util.Date;
 
 /**
@@ -9,7 +10,7 @@ public interface Subject {
     /*
     Интерфейс для описания сущности предметов
      */
-    String subjectName();
+    String title();
     TimeTable timeTable();
     void print();
 }
