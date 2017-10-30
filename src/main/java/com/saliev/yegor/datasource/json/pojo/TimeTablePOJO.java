@@ -1,4 +1,4 @@
-package com.saliev.yegor.entity.pojo;
+package com.saliev.yegor.datasource.json.pojo;
 
 import com.saliev.yegor.entity.Lecture;
 import com.saliev.yegor.entity.TimeTable;
@@ -17,6 +17,14 @@ public class TimeTablePOJO implements TimeTable {
     }
     public List<Lecture> allLectures() {
         return lectures;
+    }
+
+    public List<Lecture> getLectures() {
+        return lectures;
+    }
+
+    public void setLectures(List<Lecture> lectures) {
+        this.lectures = lectures;
     }
 
     public List<Lecture> lecturesFrom(Date date) {

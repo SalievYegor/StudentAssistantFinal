@@ -1,6 +1,5 @@
-package com.saliev.yegor.entity.pojo;
+package com.saliev.yegor.datasource.json.pojo;
 
-import com.saliev.yegor.entity.Lecture;
 import com.saliev.yegor.entity.LectureRoom;
 
 /**
@@ -8,9 +7,9 @@ import com.saliev.yegor.entity.LectureRoom;
  */
 public class LectureRoomPOJO implements LectureRoom {
 
-    public int floor;
-    public int number;
-    public String description;
+    private int floor;
+    private int number;
+    private String description;
 
     public int floor() {
         return floor;

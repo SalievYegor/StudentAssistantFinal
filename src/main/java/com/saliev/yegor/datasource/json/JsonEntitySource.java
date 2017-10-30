@@ -1,12 +1,11 @@
-package com.saliev.yegor;
+package com.saliev.yegor.datasource.json;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.saliev.yegor.datasource.json.pojo.LecturePOJO;
+import com.saliev.yegor.datasource.json.pojo.SubjectPOJO;
+import com.saliev.yegor.datasource.json.pojo.TimeTablePOJO;
 import com.saliev.yegor.entity.Lecture;
 import com.saliev.yegor.entity.Subject;
-import com.saliev.yegor.entity.TimeTable;
-import com.saliev.yegor.entity.pojo.LecturePOJO;
-import com.saliev.yegor.entity.pojo.SubjectPOJO;
-import com.saliev.yegor.entity.pojo.TimeTablePOJO;
 
 import java.io.IOException;
 import java.text.DateFormat;

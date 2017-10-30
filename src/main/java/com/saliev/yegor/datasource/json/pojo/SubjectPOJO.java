@@ -1,4 +1,4 @@
-package com.saliev.yegor.entity.pojo;
+package com.saliev.yegor.datasource.json.pojo;
 
 import com.saliev.yegor.entity.Lecture;
 import com.saliev.yegor.entity.LectureRoom;
@@ -27,14 +27,14 @@ public class SubjectPOJO implements Subject {
     }
 
     public void print(){
-        System.out.println("Subject: " + title);
+//        System.out.println("Subject: " + title);
         for (Lecture lecture : timeTable.allLectures()) {
             System.out.println("Lecture: " + lecture.title());
             System.out.println("description: " + lecture.description());
             System.out.println("start: " + lecture.startTime());
             System.out.println("end: " + lecture.endTime());
             LectureRoom room = lecture.lectureRoom();
-            System.out.println("room: " + room.floor() + " floor, " + room.number() + ", " + room.description());
+            System.out.println("room: " + room.number() + " floor, " + room.floor() + ", " + room.description());
         }
     }
 }

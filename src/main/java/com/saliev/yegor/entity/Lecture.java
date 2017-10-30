@@ -15,6 +15,5 @@ public interface Lecture {
     LectureRoom lectureRoom();
     String title();
     String description();
-    void print();
 
 }
