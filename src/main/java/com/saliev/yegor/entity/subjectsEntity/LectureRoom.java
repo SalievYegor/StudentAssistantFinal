@@ -1,4 +1,4 @@
-package com.saliev.yegor.entity;
+package com.saliev.yegor.entity.subjectsEntity;
 
 /**
  * Created by Halvasan on 19.10.2017.

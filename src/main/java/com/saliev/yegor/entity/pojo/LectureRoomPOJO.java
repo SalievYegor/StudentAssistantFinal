@@ -1,6 +1,6 @@
-package com.saliev.yegor.datasource.json.pojo;
+package com.saliev.yegor.entity.pojo;
 
-import com.saliev.yegor.entity.LectureRoom;
+import com.saliev.yegor.entity.subjectsEntity.LectureRoom;
 
 /**
  * Created by Halvasan on 19.10.2017.

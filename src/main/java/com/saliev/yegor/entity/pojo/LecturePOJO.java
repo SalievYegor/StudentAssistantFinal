@@ -1,7 +1,7 @@
-package com.saliev.yegor.datasource.json.pojo;
+package com.saliev.yegor.entity.pojo;
 
-import com.saliev.yegor.entity.Lecture;
-import com.saliev.yegor.entity.LectureRoom;
+import com.saliev.yegor.entity.subjectsEntity.Lecture;
+import com.saliev.yegor.entity.subjectsEntity.LectureRoom;
 
 import java.util.Date;
 

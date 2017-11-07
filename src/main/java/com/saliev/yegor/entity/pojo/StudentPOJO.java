@@ -1,7 +1,7 @@
-package com.saliev.yegor.datasource.json.pojo;
+package com.saliev.yegor.entity.pojo;
 
-import com.saliev.yegor.entity.Student;
-import com.saliev.yegor.entity.TimeTable;
+import com.saliev.yegor.entity.subjectsEntity.Student;
+import com.saliev.yegor.entity.subjectsEntity.TimeTable;
 
 /**
  * Created by Halvasan on 27.10.2017.

@@ -1,11 +1,9 @@
 package com.saliev.yegor;
 
-import com.saliev.yegor.datasource.json.JsonEntitySource;
-import com.saliev.yegor.datasource.sql.SelectStatement;
-import com.saliev.yegor.entity.Subject;
+
+import com.saliev.yegor.datasource.sql.UpdateToTables;
 
 import java.sql.SQLException;
-import java.sql.Statement;
 import java.text.ParseException;
 
 /**
@@ -20,8 +18,9 @@ public class Main {
 //        Subject subject = app.subject(subjectName);
 //
 //        subject.print();
-        SelectStatement stm = new SelectStatement();
-        stm.selectStn();
+
+        UpdateToTables udtt = new UpdateToTables();
+        udtt.updToSQL();
     }
 }
 
